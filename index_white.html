@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+
+<head>
+
+    <title>Marco Tessiore | Folio</title>
+    
+
+    <link rel="stylesheet" href="stylewhite.css">
+    <link rel='stylesheet' id='wp-block-library-css' href='wp-includes/css/dist/block-library/style.min_ver=5.0.8.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='style-css' href='wp-content/themes/folio/style_ver=1563287563.css' type='text/css' media='all' />
+
+    
+</head>
+
+<style>
+    body {
+        background: white;
+    }
+    
+    .gallery {
+        z-index: 200;
+    }
+    
+    nav {
+        position: fixed;
+        width: 100%;
+        z-index: 500;
+    }
+    
+    .site-wrapper {
+        width: 100%;
+        max-width: 1600px;
+        margin: 0 auto;
+        z-index: 999;
+        background: white;
+    }
+    
+    .content-wrapper {
+        width: calc(100% - 50px);
+        margin: 0 auto;
+    }
+    
+    .top-section {
+        position: relative
+    }
+    
+    @keyframes reflowAnimation {
+        0% {
+            transform: translateX(0) translateZ(0)
+        }
+        100% {
+            transform: translateX(-50%) translateZ(0)
+        }
+    }
+    
+    .rolling {
+        max-height: 5vh;
+        margin-top: 82vh !important;
+        position: fixed;
+        z-index: 0;
+        bottom: 0;
+        top: 13vh;
+        left: 0;
+        margin: auto;
+        text-transform: none;
+        white-space: nowrap;
+        font-size: 10vw;
+        pointer-events: none;
+        backface-visibility: hidden;
+        line-height: 1;
+        letter-spacing: -0.02em;
+        color: red;
+    }
+    
+    .rolling.animate {
+        animation: reflowAnimation 15000ms linear infinite
+    }
+    
+    div.right {
+        background-position: 0 0;
+        border-width: 0;
+        box-sizing: border-box;
+        float: right;
+        font-size: 100%;
+        margin: 0;
+        max-width: 300px;
+        outline: 0;
+        margin-right: 20px;
+        padding: 10px 10px 10px;
+        vertical-align: baseline;
+        width: 100%;
+    }
+    
+    div.left {
+        background-position: 0 0;
+        border-width: 0;
+        box-sizing: border-box;
+        float: left;
+        font-size: 100%;
+        margin: 0;
+        max-width: 40vw;
+        outline: 0;
+        padding: 0 20px 0 0;
+        vertical-align: baseline;
+        width: 100%;
+    }
+    
+    p {
+        background-position: 0 0;
+        border-width: 0;
+        box-sizing: border-box;
+        font-size: 100%;
+        margin: 0 0 20px;
+        outline: 0;
+        padding: 0;
+        vertical-align: baseline;
+    }
+</style>
+
+<body class="home page-template-default page page-id-62 not-mobile">
+    <nav>
+        <div id="pattern" class="pattern" style="background:white">
+            <div class="offcanvas-top">
+                <div class="o-content">
+                    <div class="inner">
+                        <img id="portrait" src="data:image/jpeg;base64,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" alt="">
+                        <div class="left">
+                            <p>Filmmaker, producer, storyteller Italy based.
+                                This is my online portfolio among fashion films, documentaries, commercials and online contents.</p>
+                            <p><strong>Select Clients:<br> </strong><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci minima ab saepe deserunt magni autem minus quae corrupti accusamus fugit!.</em></p>
+                        </div>
+                        <div class="right">
+                            <p><strong>Bookings, licensing &amp; reuse:</strong>
+                                <br> <a href="mailto:hello@graydonherriott.com">hello@graydonherriott.com</a></p>
+                                <p><strong>Address</strong>
+                                <br> Turin, Metropolitan City of Turin, Italy</p>
+                                
+                            <p><strong>Phone:</strong>
+                                <br> (+39) 000-000000</p>
+                                <p><strong>Instagram:<br> </strong><a href="https://www.instagram.com/marcoinmotion/" target="_blank" rel="noopener">@marcoinmotion</a>
+                                <p><strong>Vimeo:<br> </strong><a href="https://vimeo.com/marcotessiore" target="_blank" rel="noopener">marcotessiore</a>    
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <header style="background: white;
+    padding-top: 15vh;
+    z-index: 50;
+    color: black;">
+
+        <div class="js-title">
+
+            <h1 style="font-size: 5vw;">Folio: </h1>
+            <p style="padding-top:2vh;">Animi incidunt totam commodi atque reprehenderit, neque sit dolorum perspiciatis laboriosam ab. Laborum soluta accusantium quia nemo ullam. Esse voluptate deserunt iure praesentium in dolores, veniam repudiandae rerum quibusdam architecto culpa temporibus?</p>
+
+        </div>
+    </header>
+    <div class="ajax-wrap">
+
+        <div class="ajax-contents">
+
+            <div class="featured-projects-wrap">
+                <ul class="featured-projects" style="color: black;margin-bottom: 10%;">
+
+                    <li id="one"> <a href="#" class="featured-project ">Redemption </a>
+
+                        <video id="one" class="gallery" playsinline autoplay muted loop>
+                            <source src="redemption.mp4#t=10,20" type="video/mp4"> Your browser does not support the video tag.
+                        </video>
+
+                    </li>
+                    <li id="two"> <a href="#" class="featured-project">Sensations</a>
+                        <video id="two" class="gallery" playsinline autoplay muted loop>
+                            <source src="sensation.mp4#t=10,20" type="video/mp4"> Your browser does not support the video tag.
+                        </video>
+                    </li>
+                    <li id="three"> <a href="#" class="featured-project">Royal Pirates MV</a>
+                        <video id="three" class="gallery" playsinline autoplay muted loop>
+                            <source src="pirates.mp4#t=10,20" type="video/mp4"> Your browser does not support the video tag.
+                        </video>
+                    </li>
+
+                    <li id="four"> <a href="#" class="featured-project">The Breeze of Jeju</a>
+                        <video id="four" class="gallery" playsinline autoplay muted loop>
+                            <source src="jeju.mp4#t=10,20" type="video/mp4">
+
+                    </li>
+
+                    <li id="five"> <a href="#" class="featured-project">Mad In My Way</a>
+                        <video id="five" class="gallery" playsinline autoplay muted loop>
+                            <source src="madinmyway.mp4#t=10,20" type="video/mp4">
+                    </li>
+                    <li> <a href="#" class="featured-project">Project</a></li>
+                    <li> <a href="#" class="featured-project">Project</a></li>
+                    <li> <a href="#" class="featured-project">Project</a></li>
+                    <li> <a href="#" class="featured-project">Project</a></li>
+                    <li> <a href="#" class="featured-project">Project</a></li>
+                    <li> <a href="#" class="featured-project">Project</a></li>
+                    <li> <a href="#" class="featured-project">Project</a></li>
+                    <li> <a href="#" class="featured-project">Project</a></li>
+                    <li> <a href="#" class="featured-project">Project</a></li>
+                    <li> <a href="#" class="featured-project">Project</a></li>
+                    
+
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <div class="content-wrapper" style="background-color: white !important;">
+        <div class="top-section">
+            <section></section>
+            <h1 class="rolling animate" style="font-size: 2.2rem; background: black;
+        color: #fff;
+        padding: 5px 25px;
+        display:inline-block; /*optional */">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi unde dicta voluptas eaque maxime? Eos commodi inventore perferendis neque delectus dolorum totam velit temporibus dicta dolores, placeat iste itaque porro.</h1>
+
+        </div>
+    </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+<!-- Dynamic page generated in 2.200 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2020-04-19 03:52:52 -->
+
+<!-- super cache -->
